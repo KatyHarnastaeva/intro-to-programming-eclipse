@@ -1,64 +1,105 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-        </title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/index.css">
-    </head>
-<body><p>Katy Harnastaeva</p>
+
+<head>
+    <title>
+    </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <p>Katy Harnastaeva</p>
     <section>
-        <div class="heading">
-        <p>
-        <h1>About</h1></div>
-Hello! My name is Katy Harnastaeva. I am Engineer of Telecommunication. 
-        </p>
-        
+        <div class="#heading">
+            <a href="#about">About</a><br>
+            <a href="#experience">Experience</a><br>
+            <a href="#skills">Skills</a><br>
+            <a href="#connect">Connect</a><br>
+            <a href="#leave_a_message">Leave a Message</a><br>
+            <a href="#messages">Messages</a>
+        </div>
     </section>
-    <section>
+    <section id="about">
         <div class="heading">
-        <h1>Experience</h1></div>
-        <ul>
-            <li>Institute of Digital Television Horizont</li>
-            <li>Center of Information and Automation Calculation</li>
-            <li>Neutrino-Cat</li>
-            <li>Zultys</li>
-        </ul>
+            <h1>About</h1>
+        </div>
+        Hello! My name is Katy Harnastaeva. I am Engineer of Telecommunication.
+    </section>
+    <section id="experience">
+        <div class="heading">
+            <h1>Experience</h1>
+        </div>
+        <div class="expirience">
+            <div>Institute of Digital Television Horizont</div>
+            <div>Center of Information and Automation Calculation</div>
+            <div>Neutrino-Cat</div>
+            <div>Zultys</div>
+        </div>
     </section>
     <section id="skills">
         <div class="heading">
-        <h2>Skills</h2></div>
+            <h2>Skills</h2>
+        </div>
         <ul>
-        </ul> 
-    </section>
-    <section>
-        <div class="heading">
-        <h1>Connect</h1></div>
-        <ul>
-        <li><a href="">email</a></li>
-        <li><a href="https://www.facebook.com/settings?tab=account&section=username">Facebook</a></li>
-        <li><a href="https://github.com/KatyHarnastaeva">Github</a></li>
         </ul>
-</section>
-<section>
-    <div class="heading">
-    <h2>Leave a Message</h2> </div>
-    <form name = "leave_message">
-        <label for="name">Name:</label>
-        <input type = "text" name = "name" required = true><br><br>
-        <label for="email">Email:</label>
-        <input type = "email" name = "email" required = true><br><br> 
-        <textarea name = "message"  required = true></textarea><br>
-        <button type = "submit" >Submit</button>
-    </form>
     </section>
-    <section id = "messages">
+    <section id="connect">
         <div class="heading">
-        <h2>Messages</h2> </div>
+            <h1>Connect</h1>
+        </div>
         <ul>
-           </ul> 
-        </section>
-<footer></footer>
-<script src="js/index.js"></script>
+            <li><a href="">email</a></li>
+            <li><a href="https://www.facebook.com/settings?tab=account&section=username">Facebook</a></li>
+            <li><a href="https://github.com/KatyHarnastaeva">Github</a></li>
+        </ul>
+    </section>
+    <section id="leave_a_message">
+        <div class="heading">
+            <h2>Leave a Message</h2>
+        </div>
+        <!-- <form name="leave_message" class="messageForm">
+            <div class="message">
+                <label for="msg">Message</label>
+                <textarea name="message" required=true></textarea>
+            </div>
+            <div class="contact">
+                <label for="name">Name:</label>
+                <input type="text" name="name" required=true>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required=true>
+            </div>
+            
+            
+            <button type="submit">Submit</button>
+        </form> -->
+        <form name="leave_message" class="messageForm">
+            
+            <div class="contact">
+              <label for="name">Name:</label>
+              <input type="text" id="name">
+          
+              <label for="email">Email Address:</label>
+              <input type="email" id="email"> 
+          
+              <button type="submit">Submit</button>
+            </div>
+            <div class="message">
+                <label for="message">Message:</label>
+                <textarea name="message" required=true></textarea>
+              </div>
+          </form>
+    </section>
+    <section id="messages">
+        <div class="heading">
+            <h2>Messages</h2>
+        </div>
+        <ul>
+        </ul>
+    </section>
+    <footer></footer>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
