@@ -41,20 +41,14 @@ messagesForm.addEventListener('submit', function(event){
     
 } );
 
-
-
-let githubRequest = new XMLHttpRequest();
-githubRequest.open("GET", "https://api.github.com/users/KatyHarnastaeva/repos");
-githubRequest.send();
-githubRequest.addEventListener("load", function(e) {
-        let repositories = JSON.parse(this.response);
-        console.log(repositories);
+fetch("https://api.github.com/users/KatyHarnastaeva/repos")
+    .then(response => response.json())
+    .then(data => {
         let projectSection = document.getElementById("projects");
         let projectList = projectSection.getElementsByTagName("UL")[0];     
-        console.log(projectList);
-        for (let i=0; i < repositories.length; i++){
+        for (let i=0; i < data.length; i++){
             let project = document.createElement("LI");
-            project.innerHTML = '<a href="' + repositories[i].html_url + '">'+ repositories[i].name +'</a>';
+            project.innerHTML = '<a href="' + data[i].html_url + '">'+ data[i].name +'</a>';
             projectList.appendChild(project);
         }
-    }, false);
+    });
