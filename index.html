@@ -9,32 +9,59 @@
 </head>
 
 <body>
-    <p>Katy Harnastaeva</p>
-    <section>
-        <div class="#heading">
-            <a href="#about">About</a><br>
-            <a href="#experience">Experience</a><br>
-            <a href="#skills">Skills</a><br>
-            <a href="#connect">Connect</a><br>
-            <a href="#leave_a_message">Leave a Message</a><br>
+    <header>
+    <div class="#heading">
+        <span class="person">Katy Harnastaeva</span>
+        <span class= "menu">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#connect">Connect</a>
+            <a href="#leave_a_message">Leave a Message</a>
             <a href="#messages">Messages</a>
+        </span>
         </div>
-    </section>
+    </header>
     <section id="about">
         <div class="heading">
-            <h1>About</h1>
+            <h2>About</h2>
         </div>
-        Hello! My name is Katy Harnastaeva. I am Engineer of Telecommunication.
+        Experience of testing Web, Mobile and Desktop applications <br>
+Proficient in Black box testing using different types of testing: functionality, UI, system, regression,
+integration testing<br>
+Strong understanding of Software Development Life Cycle, Quality Assurance Life Cycle, testing strategies
+and tools<br>
+Practical experience in creating test documentations, test cases<br>
+Ability to work independently in a fast-paced, deadline-driven environment. Self-motivated, result-oriented
+team player with excellent communication skills <br>
+        Pronouns: she/her
     </section>
     <section id="experience">
         <div class="heading">
-            <h1>Experience</h1>
+            <h2>Experience</h2>
         </div>
         <div class="expirience">
-            <div>Institute of Digital Television Horizont</div>
-            <div>Center of Information and Automation Calculation</div>
-            <div>Neutrino-Cat</div>
-            <div>Zultys</div>
+            <ul>
+                <li><span>QA Engineer  
+                    - Zultys
+                </span>
+                <span class = "emphasis"> Apr 2014 - Jan 2018</span></li>
+                <li><span>QA Engineer  
+                    - Neutrino-Cat
+                </span>
+                <span class = "emphasis"> Jan 2012 – Mar 2014</span>
+                </li>
+                <li><span>Design Engineer 
+                    - Center of Information and Automation Calculation
+                </span>
+                <span class = "emphasis"> Jan 2006 – Jan 2012</span></li>
+                <li>
+                <span>Senior Engineer 
+                - Institute of Digital Television Horizont
+                 </span>
+                <span class = "emphasis"> Mar 2005 – Jan 2006 </span>
+                </li>
+            </ul>
         </div>
     </section>
     <section id="skills">
@@ -49,16 +76,7 @@
         </div>
         <ul></ul>
     </section>
-    <section id="connect">
-        <div class="heading">
-            <h1>Connect</h1>
-        </div>
-        <ul>
-            <li><a href="">email</a></li>
-            <li><a href="https://www.facebook.com/settings?tab=account&section=username">Facebook</a></li>
-            <li><a href="https://github.com/KatyHarnastaeva">Github</a></li>
-        </ul>
-    </section>
+   
     <section id="leave_a_message">
         <div class="heading">
             <h2>Leave a Message</h2>
@@ -72,12 +90,14 @@
               <label for="email">Email Address:</label>
               <input type="email" id="email"> 
           
-              <button type="submit">Submit</button>
+              
             </div>
+            
             <div class="message">
                 <label for="message">Message:</label>
                 <textarea name="message" required=true></textarea>
               </div>
+              <div><button class="button" type="submit">Submit</button></div>
           </form>
     </section>
     <section id="messages">

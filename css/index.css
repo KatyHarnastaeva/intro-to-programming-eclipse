@@ -1,7 +1,20 @@
 body {
-    background-color: lavender;
+    background-color: white;
     color: black;
-    font-family: "Lucida Console", "Courier New", monospace;
+}
+header {padding: 0px 0px 0px 25px;
+        margin: 0px 0px 0px 25px;
+        font-weight: bold;
+}
+.person {
+    padding-right: 20rem;
+}
+.menu {
+    display: inline;
+
+}
+.menu a{
+    padding-right: 20px;
 }
 
 section {
@@ -10,21 +23,24 @@ section {
 }
 
 .heading {
-    font-size: 30px;
-    color: firebrick;
-    font-weight: normal;
+    font-size: 30 px;
+    color: black;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 ul {
-    list-style-type: square;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 footer {
-    background-color: darkmagenta;
     margin: 0px 20px 0px 5px;
     height: 40px;
+    text-align: center;
 }
 
 @media (min-width: 640px) {
@@ -46,37 +62,81 @@ footer {
 }
 
 .expirience {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display:flex;
+    align-items:left;
+    justify-content:left;
 }
 
-.expirience div {
-    width: 200px;
-    height: 100px;
-    padding-right: 10px;
+    .expirience div {
+        width: 500 px;
+        height: 30px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        }
+
+.expirience {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-between; 
+    margin-bottom: 1rem;
+}
+.expirience li {
+    border: 2px solid beige;
+    border-radius: 5px;
+    background-color: beige;
+    padding: 1rem;
+    justify-content: space-between; 
+    display: flex;
+    margin-bottom: 1rem;
+    margin-left: -20px;
+}
+#skills li{
+    border-radius: 5px;
+    border: 2px solid beige;
+    color: var(--color-primary);
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 0.5rem;
+    margin-right: 5px;
 }
 
 .messageForm {
-    display: flex;
+    display: block;
     border-radius: 3px;
+
 }
 
 .message {
     margin-right: 2em;
     display: flex;
     flex-direction: column;
+
 }
 
 .message label {
-    font-size: 15px;
-    color: blueviolet;
+    font-size: 20px;
+    color: black;
 }
 
 .message>textarea {
     flex: 1;
-    min-width: 18em;
-    border: 2px;
+    margin-bottom: 1em;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+    width: 81%;
+    height: 100px;;
+}
+.button {
+    background-color: lightgrey;
+    border-radius: 2px;
+color: blue;
+min-width: 100px;
+padding: 0.5rem 1rem;
+transition: opacity 0.2s ease-in-out;
+font-size: 20px;
+
 }
 
 .contact {
@@ -84,13 +144,19 @@ footer {
 }
 
 .contact label {
-    font-size: 15px;
-    color: blueviolet;
+    font-size: 20px;
+    
 }
 
 .contact input {
-    width: 90%;
+    width: 80%;
     border: 2px;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+    width: 30%;
 }
 
 .contact input, .contact button {
