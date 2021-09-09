@@ -5,7 +5,7 @@ let copyright = document.createElement("P");
 copyright.innerHTML = '© Katy Harnastaeva ' + thisYear;
 footer.appendChild(copyright);
 
-let skills = [ "HTML", "CSS", "XML", "JavaScript", "jQuery", "SQL", " MySQL"];
+let skills = [ "HTML", "CSS", "XML", "JavaScript", "jQuery", "SQL", "MySQL", "React", "Git", "Linux"];
 let skillsSection = document.getElementById('skills');               
 let skillsList = skillsSection.getElementsByTagName("UL")[0];    
 for (let i=0; i<=skills.length-1; i++){
@@ -18,10 +18,11 @@ function removeMessage (event){
     let entry = event.target.parentNode;
     entry.remove();
 }
-
+let showMessage = false;
 let messagesForm = document.querySelectorAll('[name="leave_message"]')[0];
 messagesForm.addEventListener('submit', function(event){
     event.preventDefault();
+    showMessage=true;
     let name = event.target.name.value;
     let email = event.target.email.value;
     let message = event.target.message.value;
@@ -34,6 +35,7 @@ messagesForm.addEventListener('submit', function(event){
     let removeButton = document.createElement("BUTTON");
     removeButton.innerText = "remove";
     removeButton.setAttribute('type', "button");
+    removeButton.setAttribute('class', "button")
     removeButton.addEventListener('click', removeMessage);
     newMessage.appendChild(removeButton);
     event.target.reset();

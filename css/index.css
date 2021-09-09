@@ -1,20 +1,26 @@
 body {
-    background-color: white;
+    background-color: #d8cfd0;
     color: black;
 }
-header {padding: 0px 0px 0px 25px;
-        margin: 0px 0px 0px 25px;
-        font-weight: bold;
+header {
+    padding: 0px 0px 0px 25px;
+    margin: 0px 0px 0px 25px;
 }
 .person {
-    padding-right: 20rem;
+    font-family: cursive;
+    font-size: larger;
+    letter-spacing: 2px;   
+    color:#b1a6a4;
 }
 .menu {
     display: inline;
+    font-size:20px;
 
 }
 .menu a{
     padding-right: 20px;
+    text-decoration: none;
+    color:#697184;
 }
 
 section {
@@ -23,12 +29,20 @@ section {
 }
 
 .heading {
-    font-size: 30 px;
-    color: black;
-    font-weight: bold;
+    font-size: 20 px;
+    color: #697184;
     align-items: center;
     display: flex;
     justify-content: space-between;
+}
+.heading h2{
+    font-family: cursive;
+    color: black;
+}
+.heading p{
+    text-align: justify;
+    padding-right: 25.5rem;
+    color: black;
 }
 
 ul {
@@ -82,23 +96,19 @@ footer {
     margin-bottom: 1rem;
 }
 .expirience li {
-    border: 2px solid beige;
-    border-radius: 5px;
-    background-color: beige;
-    padding: 1rem;
+    padding: 0.5rem;
     justify-content: space-between; 
     display: flex;
-    margin-bottom: 1rem;
     margin-left: -20px;
 }
 #skills li{
     border-radius: 5px;
-    border: 2px solid beige;
+    border: 2px solid grey;
+    background-color:#b1a6a4;
     color: var(--color-primary);
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
+    display:inline-table;
     margin-bottom: 0.5rem;
-    margin-right: 5px;
+    margin-right: 20px;
 }
 
 .messageForm {
@@ -111,6 +121,7 @@ footer {
     margin-right: 2em;
     display: flex;
     flex-direction: column;
+    
 
 }
 
@@ -119,24 +130,21 @@ footer {
     color: black;
 }
 
-.message>textarea {
+.message textarea {
     flex: 1;
     margin-bottom: 1em;
     border: 2px solid gray;
     border-radius: 5px;
     padding: 0.25rem 0.5rem;
-    width: 81%;
-    height: 100px;;
+    height: 100px;
+    max-width: 65.5%;
+    background-color:#f2f1ef;
 }
 .button {
-    background-color: lightgrey;
-    border-radius: 2px;
-color: blue;
-min-width: 100px;
-padding: 0.5rem 1rem;
-transition: opacity 0.2s ease-in-out;
-font-size: 20px;
-
+    border-radius: 7px;
+    min-width: 100px;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 17px;
 }
 
 .contact {
@@ -150,21 +158,66 @@ font-size: 20px;
 
 .contact input {
     width: 80%;
-    border: 2px;
     padding: 1em;
     margin-bottom: 1em;
     border: 2px solid grey;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 0.25rem 0.5rem;
     width: 30%;
+    background-color:#f2f1ef;
 }
 
 .contact input, .contact button {
     padding: 1em;
     margin-bottom: 1em;
+    
 }
 
 .contact button {
-    background-color: rgb(101, 175, 218);
+    background-color: #413F3D;
     border-radius: 5px;
 }
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+    .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    color:grey;
+  }
+  .fa-instagram {
+    color: grey;
+  }
+  .fa-github {
+    color: grey;
+  }
+  .right{
+      
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+      border: 5px solid #b1a6a4;
+      position: -webkit-sticky;
+      top:0;
+  }
+  img{
+      float: right;
+  }
+  a:link {
+    color: black;
+  }
+  a:visited {
+    color: rgb(119, 78, 78);
+  }
+  a:hover {
+    color: rgb(121, 47, 84);
+  }
+  a:active {
+    color: rgb(61, 61, 63);
+  }
