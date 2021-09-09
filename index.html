@@ -9,32 +9,53 @@
 </head>
 
 <body>
-    <p>Katy Harnastaeva</p>
-    <section>
-        <div class="#heading">
-            <a href="#about">About</a><br>
-            <a href="#experience">Experience</a><br>
-            <a href="#skills">Skills</a><br>
-            <a href="#connect">Connect</a><br>
-            <a href="#leave_a_message">Leave a Message</a><br>
+    <header>
+    <div class="heading">
+        <span class="person">Katy Harnastaeva</span>
+        <span class= "menu">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#connect">Connect</a>
+            <a href="#leave_a_message">Leave a Message</a>
             <a href="#messages">Messages</a>
+        </span>
         </div>
-    </section>
+    </header>
     <section id="about">
         <div class="heading">
-            <h1>About</h1>
+            <div class="introSection">
+                <img src="/Users/katyharnastaeva/Downloads/Me.jpg" alt="Me" width="300" height="300" class="right">
+                <h2>Hey, I'm Katy!</h2>
+                <p>I'm a Frontend Developer based in Raleigh, NC. I am really enjoying writing code and  I like to observe how new product appears.  I like learning something new and I usually use <a href = "https://www.coursera.org/">Coursera</a> for it and I often take some interesting classes there.</p>
+                <p>My coding experience started many years ago when I started to study at University in 2000.  At that time I only learned basic computer language as  <a href="https://en.wikipedia.org/wiki/Pascal_(programming_language)">Pascal.</a>  I even couldn't imagine that I will tie my life with programming. In 2005, I got my master's degree in Telecommunication and started my job as Engineer. It was a really interesting job, but in 2010 I began to think that I needed to try something new.  That is how I started my new career as a QA Engineer where I met with coding again. </p>
+                <p>Besides work I love spending time with my family and my Golden Retriever Bella. Also I enjoy staying home on rainy days with books and coffee.</p></div>
+            
         </div>
-        Hello! My name is Katy Harnastaeva. I am Engineer of Telecommunication.
     </section>
     <section id="experience">
         <div class="heading">
-            <h1>Experience</h1>
+            <h2>Experience</h2>
         </div>
         <div class="expirience">
-            <div>Institute of Digital Television Horizont</div>
-            <div>Center of Information and Automation Calculation</div>
-            <div>Neutrino-Cat</div>
-            <div>Zultys</div>
+            <ul>
+                <li>
+                    <span>QA Engineer - Zultys</span>
+                    <span class = "emphasis"> Apr 2014 - Jan 2018</span>
+                </li>
+                <li>
+                    <span>QA Engineer - Neutrino-Cat</span>
+                    <span class = "emphasis"> Jan 2012 – Mar 2014</span>
+                </li>
+                <li>
+                    <span>Design Engineer - Center of Information and Automation Calculation</span>
+                    <span class = "emphasis"> Jan 2006 – Jan 2012</span>
+                </li>
+                <li>
+                    <span>Senior Engineer - Institute of Digital Television Horizont</span>
+                    <span class = "emphasis"> Mar 2005 – Jan 2006 </span>
+                </li>
+            </ul>
         </div>
     </section>
     <section id="skills">
@@ -49,16 +70,7 @@
         </div>
         <ul></ul>
     </section>
-    <section id="connect">
-        <div class="heading">
-            <h1>Connect</h1>
-        </div>
-        <ul>
-            <li><a href="">email</a></li>
-            <li><a href="https://www.facebook.com/settings?tab=account&section=username">Facebook</a></li>
-            <li><a href="https://github.com/KatyHarnastaeva">Github</a></li>
-        </ul>
-    </section>
+   
     <section id="leave_a_message">
         <div class="heading">
             <h2>Leave a Message</h2>
@@ -66,28 +78,31 @@
         <form name="leave_message" class="messageForm">
             
             <div class="contact">
-              <label for="name">Name:</label>
-              <input type="text" id="name">
-          
-              <label for="email">Email Address:</label>
-              <input type="email" id="email"> 
-          
-              <button type="submit">Submit</button>
+              <input type="text" id="name" placeholder="Name">          
+              <input type="email" id="email" placeholder="Email Address"> 
             </div>
+            
             <div class="message">
-                <label for="message">Message:</label>
-                <textarea name="message" required=true></textarea>
-              </div>
+                <textarea name="message" required=true placeholder="Type your message here"></textarea>
+            </div>
+            <div>
+                <button class="button" type="submit">Send Message</button>
+            </div>
           </form>
     </section>
     <section id="messages">
-        <div class="heading">
+        <div class="heading" >
             <h2>Messages</h2>
         </div>
         <ul>
         </ul>
     </section>
-    <footer></footer>
+    <footer>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="https://www.facebook.com/katerina.harnastaeva" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/katerinah_minsk/" class="fa fa-instagram"></a>
+        <a href="https://github.com/KatyHarnastaeva" class="fa fa-github"></a>
+    </footer>
     <script src="js/index.js"></script>
 </body>
 

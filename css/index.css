@@ -1,7 +1,26 @@
 body {
-    background-color: lavender;
+    background-color: #d8cfd0;
     color: black;
-    font-family: "Lucida Console", "Courier New", monospace;
+}
+header {
+    padding: 0px 0px 0px 25px;
+    margin: 0px 0px 0px 25px;
+}
+.person {
+    font-family: cursive;
+    font-size: larger;
+    letter-spacing: 2px;   
+    color:#b1a6a4;
+}
+.menu {
+    display: inline;
+    font-size:20px;
+
+}
+.menu a{
+    padding-right: 20px;
+    text-decoration: none;
+    color:#697184;
 }
 
 section {
@@ -10,21 +29,32 @@ section {
 }
 
 .heading {
-    font-size: 30px;
-    color: firebrick;
-    font-weight: normal;
+    font-size: 20 px;
+    color: #697184;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.heading h2{
+    font-family: cursive;
+    color: black;
+}
+.heading p{
+    text-align: justify;
+    padding-right: 25.5rem;
+    color: black;
 }
 
 ul {
-    list-style-type: square;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 footer {
-    background-color: darkmagenta;
     margin: 0px 20px 0px 5px;
     height: 40px;
+    text-align: center;
 }
 
 @media (min-width: 640px) {
@@ -46,37 +76,75 @@ footer {
 }
 
 .expirience {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display:flex;
+    align-items:left;
+    justify-content:left;
 }
 
-.expirience div {
-    width: 200px;
-    height: 100px;
-    padding-right: 10px;
+    .expirience div {
+        width: 500 px;
+        height: 30px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        }
+
+.expirience {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-between; 
+    margin-bottom: 1rem;
+}
+.expirience li {
+    padding: 0.5rem;
+    justify-content: space-between; 
+    display: flex;
+    margin-left: -20px;
+}
+#skills li{
+    border-radius: 5px;
+    border: 2px solid grey;
+    background-color:#b1a6a4;
+    color: var(--color-primary);
+    display:inline-table;
+    margin-bottom: 0.5rem;
+    margin-right: 20px;
 }
 
 .messageForm {
-    display: flex;
+    display: block;
     border-radius: 3px;
+
 }
 
 .message {
     margin-right: 2em;
     display: flex;
     flex-direction: column;
+    
+
 }
 
 .message label {
-    font-size: 15px;
-    color: blueviolet;
+    font-size: 20px;
+    color: black;
 }
 
-.message>textarea {
+.message textarea {
     flex: 1;
-    min-width: 18em;
-    border: 2px;
+    margin-bottom: 1em;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+    height: 100px;
+    max-width: 65.5%;
+    background-color:#f2f1ef;
+}
+.button {
+    border-radius: 7px;
+    min-width: 100px;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 17px;
 }
 
 .contact {
@@ -84,21 +152,72 @@ footer {
 }
 
 .contact label {
-    font-size: 15px;
-    color: blueviolet;
+    font-size: 20px;
+    
 }
 
 .contact input {
-    width: 90%;
-    border: 2px;
+    width: 80%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 0.25rem 0.5rem;
+    width: 30%;
+    background-color:#f2f1ef;
 }
 
 .contact input, .contact button {
     padding: 1em;
     margin-bottom: 1em;
+    
 }
 
 .contact button {
-    background-color: rgb(101, 175, 218);
+    background-color: #413F3D;
     border-radius: 5px;
 }
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+    .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    color:grey;
+  }
+  .fa-instagram {
+    color: grey;
+  }
+  .fa-github {
+    color: grey;
+  }
+  .right{
+      
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+      border: 5px solid #b1a6a4;
+      position: -webkit-sticky;
+      top:0;
+  }
+  img{
+      float: right;
+  }
+  a:link {
+    color: black;
+  }
+  a:visited {
+    color: rgb(119, 78, 78);
+  }
+  a:hover {
+    color: rgb(121, 47, 84);
+  }
+  a:active {
+    color: rgb(61, 61, 63);
+  }
